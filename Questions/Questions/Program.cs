@@ -21,14 +21,12 @@ namespace Questions
                     solu.Solution1();
                     break;
                 case (2):
-                    int a;
-                    int b;
-                    Console.Write("Enter value of a: ");
-                    a = int.Parse(Console.ReadLine());
-                    Console.Write("Enter value of b: ");
-                    b = int.Parse(Console.ReadLine());
                     Question2 solu2 = new Question2();
-                    solu2.Solution2(a , b);
+                    solu2.Solution2();
+                    break;
+                case (3):
+                    Question3 solu3 = new Question3();
+                    solu3.Solution3();
                     break;
                 default:
                     Console.WriteLine("Please Input a Valid No.");
