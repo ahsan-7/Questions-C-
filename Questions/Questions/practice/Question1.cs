@@ -8,5 +8,10 @@ namespace Questions.practice
 {
     class Question1
     {
+        public void Solution1()
+        {
+            Console.Write("Hello:");
+            Console.WriteLine("Ahsan");
+        }
     }
 }
