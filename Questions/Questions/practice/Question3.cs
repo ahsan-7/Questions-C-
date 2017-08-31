@@ -8,20 +8,21 @@ namespace Questions.practice
 {
     class Question3
     {
-        public void Solution3()
+        private float setA { get; set; }
+        private float setB { get; set; }
+
+        public float divide()
         {
-            float a;
-            float b;
-            Console.Write("Enter value of a: ");
-            a = float.Parse(Console.ReadLine());
-            Console.Write("Enter value of b: ");
-            b = int.Parse(Console.ReadLine());
-            AcceptValues(a , b);
+            return (this.setA / this.setB);
         }
-        static void AcceptValues(float a , float b)
+
+        public void solution()
         {
-            float Division = a / b;
-            Console.WriteLine("a / b = {0}",Division);
+            Console.Write("Enter value 1: ");
+            this.setA = float.Parse(Console.ReadLine());
+            Console.Write("Enter value 2: ");
+            this.setB = float.Parse(Console.ReadLine());
+            Console.WriteLine("value 1 / value 2 = {0}",divide());
         }
     }
 }

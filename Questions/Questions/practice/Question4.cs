@@ -8,32 +8,12 @@ namespace Questions.practice
 {
     class Question4
     {
-        public void Solution4()
+        public void solution()
         {
-            float a = -1;
-            float b = 4;
-            float c = 6;
-            float Ops1 = a + b * c;
-            Console.WriteLine(Ops1);
-            float d = 35;
-            float e = 5;
-            float f = 7;
-            float Ops2 = (d + e) % f;
-            Console.WriteLine(Ops2);
-            float g = 14;
-            float h = -4;
-            float i = 6;
-            float j = 11;
-            float Ops3 = g + h * i / j;
-            Console.WriteLine(Ops3);
-            float k = 2;
-            float l = 15;
-            float m = 6;
-            float n = 1;
-            float o = 7;
-            float p = 2;
-            float Ops4 = k + l / m * n - o % p;
-            Console.WriteLine(Ops4);
+            Console.WriteLine(-1 + 4 * 6);
+            Console.WriteLine((35 + 5) % 7);
+            Console.WriteLine(14 + -4 * 6 / 11);
+            Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
         }
     }
 }

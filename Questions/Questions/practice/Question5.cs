@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Questions.practice
 {
-    class Question1
+    class Question5
     {
-        public void solution()
-        {
-            Console.Write("Hello:");
-            Console.WriteLine("Ahsan");
-        }
     }
 }

@@ -8,16 +8,23 @@ namespace Questions.practice
 {
     class Question2
     {
-        public void Solution2()
+        
+        private float setA { get; set; }
+        private float setB { get; set; }
+
+        public float add()
         {
-            int a;
-            int b;
-            Console.Write("Enter value of a: ");
-            a = int.Parse(Console.ReadLine());
-            Console.Write("Enter value of b: ");
-            b = int.Parse(Console.ReadLine());
-            int sum = a + b;
-            Console.WriteLine("a + b =  {0}",sum);
+            return (this.setA + this.setB);
+        }
+
+        public void solution()
+        {
+            Console.Write("Enter value 1: ");
+            this.setA = float.Parse(Console.ReadLine());
+            Console.Write("Enter value 2: ");
+            this.setB = float.Parse(Console.ReadLine());
+            Console.WriteLine("Sum is {0} ", this.add());
+
         }
     }
 }

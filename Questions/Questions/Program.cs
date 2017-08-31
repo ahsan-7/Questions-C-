@@ -18,19 +18,19 @@ namespace Questions
             {
                 case (1):
                     Question1 solu = new Question1();
-                    solu.Solution1();
+                    solu.solution();
                     break;
                 case (2):
                     Question2 solu2 = new Question2();
-                    solu2.Solution2();
+                    solu2.solution();
                     break;
                 case (3):
                     Question3 solu3 = new Question3();
-                    solu3.Solution3();
+                    solu3.solution();
                     break;
                 case (4):
                     Question4 solu4 = new Question4();
-                    solu4.Solution4();
+                    solu4.solution();
                     break;
                 default:
                     Console.WriteLine("Please Input a Valid No.");
