@@ -36,6 +36,10 @@ namespace Questions
                     Question5 solu5 = new Question5();
                     solu5.solution();
                     break;
+                case (6):
+                    Question6 solu6 = new Question6();
+                    solu6.solution();
+                    break;
                 default:
                     Console.WriteLine("Please Input a Valid No.");
                     break;
