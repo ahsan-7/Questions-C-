@@ -10,34 +10,43 @@ namespace Questions.practice
     {
         private float setA { get; set; }
         private float setB { get; set; }
+        private float setC { get; set; }
 
-        private float add()
-        {
-            return (this.setA + this.setB);
-        }
-        private float subtract()
-        {
-            return (this.setA - this.setB);
-        }
-        private float multiply()
-        {
-            return (this.setA * this.setB);
-        }
-        private float divide()
-        {
-            return (this.setA / this.setB);
-        }
-
-        public void solution()
+        private void getInput()
         {
             Console.Write("Enter value 1: ");
             this.setA = float.Parse(Console.ReadLine());
             Console.Write("Enter value 2: ");
             this.setB = float.Parse(Console.ReadLine());
-            Console.WriteLine("{0} + {1} = {2}",setA,setB,add());
-            Console.WriteLine("{0} - {1} = {2}", setA, setB, subtract());
-            Console.WriteLine("{0} * {1} = {2}", setA, setB, multiply());
-            Console.WriteLine("{0} / {1} = {2}", setA, setB, divide());
+        }
+        private void add()
+        {
+            setC = this.setA + this.setB;
+            Console.WriteLine("{0} + {1} = {2}", setA, setB, setC);
+        }
+        private void subtract()
+        {
+            setC = this.setA - this.setB;
+            Console.WriteLine("{0} - {1} = {2}", setA, setB, setC);
+        }
+        private void multiply()
+        {
+            setC = this.setA * this.setB;
+            Console.WriteLine("{0} * {1} = {2}", setA, setB, setC);
+        }
+        private void divide()
+        {
+            setC = this.setA / this.setB;
+            Console.WriteLine("{0} / {1} = {2}", setA, setB, setC);
+        }
+
+        public void solution()
+        {
+            getInput();
+            add();
+            subtract();
+            multiply();
+            divide();
         }
     }
 }

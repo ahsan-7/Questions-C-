@@ -8,10 +8,14 @@ namespace Questions.practice
 {
     class Question1
     {
-        public void solution()
+        private void getName()
         {
             Console.Write("Hello:");
             Console.WriteLine("Ahsan");
+        }
+        public void solution()
+        {
+            getName();
         }
     }
 }

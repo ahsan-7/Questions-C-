@@ -11,13 +11,9 @@ namespace Questions.practice
         private float setA { get; set; }
         private float setB { get; set; }
         private float setC { get; set; }
+        private float setD { get; set; }
 
-        private float multiply()
-        {
-            return (this.setA * this.setB * this.setC);
-        }
-
-        public void solution()
+        private void getInput()
         {
             Console.Write("Enter value 1: ");
             this.setA = float.Parse(Console.ReadLine());
@@ -25,7 +21,17 @@ namespace Questions.practice
             this.setB = float.Parse(Console.ReadLine());
             Console.Write("Enter value 3: ");
             this.setC = float.Parse(Console.ReadLine());
-            Console.WriteLine("Answer is: {0}",multiply());
+        }
+        private void multiply()
+        {
+            setD = this.setA * this.setB * this.setC;
+            Console.WriteLine("Multiplication of the input is {0}", setD);
+        }
+
+        public void solution()
+        {
+            getInput();
+            multiply(); 
         }
     }
 }

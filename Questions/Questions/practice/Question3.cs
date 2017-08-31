@@ -10,19 +10,25 @@ namespace Questions.practice
     {
         private float setA { get; set; }
         private float setB { get; set; }
+        private float setC { get; set; }
 
-        private float divide()
-        {
-            return (this.setA / this.setB);
-        }
-
-        public void solution()
+        private void getInput()
         {
             Console.Write("Enter value 1: ");
             this.setA = float.Parse(Console.ReadLine());
             Console.Write("Enter value 2: ");
             this.setB = float.Parse(Console.ReadLine());
-            Console.WriteLine("value 1 / value 2 = {0}",divide());
+        }
+        private void divide()
+        {
+            setC = this.setA / this.setB;
+            Console.WriteLine("Division is = {0}", setC);
+        }
+
+        public void solution()
+        {
+            getInput();
+            divide();
         }
     }
 }

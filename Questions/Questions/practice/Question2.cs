@@ -11,20 +11,25 @@ namespace Questions.practice
         
         private float setA { get; set; }
         private float setB { get; set; }
+        private float setC { get; set; }
 
-        private float add()
-        {
-            return (this.setA + this.setB);
-        }
-
-        public void solution()
+        private void getInput()
         {
             Console.Write("Enter value 1: ");
             this.setA = float.Parse(Console.ReadLine());
             Console.Write("Enter value 2: ");
             this.setB = float.Parse(Console.ReadLine());
-            Console.WriteLine("Sum is {0} ", this.add());
+        }
+        private void add()
+        {
+            setC = this.setA + this.setB;
+            Console.WriteLine("Sum is {0} ", setC);
+        }
 
+        public void solution()
+        {
+            getInput();
+            add();
         }
     }
 }

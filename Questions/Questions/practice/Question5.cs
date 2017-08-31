@@ -11,27 +11,34 @@ namespace Questions.practice
         private int setA { get; set; }
         private int setB { get; set; }
         private int setC { get; set; }
+        private int setD { get; set; }
 
-        private int swap1()
-        {
-            setC = setA + setB;
-            setA = setC - setA;
-            return (this.setA);  
-        }
-        private int swap2()
-        {
-            setB = setC - setB;
-            return (this.setB);
-        }
-
-        public void solution()
+        private void getInput()
         {
             Console.Write("Enter no 1: ");
             this.setA = int.Parse(Console.ReadLine());
             Console.Write("Enter noi 2: ");
             this.setB = int.Parse(Console.ReadLine());
-            Console.WriteLine(swap1());
-            Console.WriteLine(swap2());
+        }
+        private void swappedValueOfA()
+        {
+            setC = setA + setB;
+            setA = setC - setA;
+            setD = this.setA;
+            Console.WriteLine(setD);
+        }
+        private void swappedValueOfB()
+        {
+            setB = setC - setB;
+            setD = this.setB;
+            Console.WriteLine(setD);
+        }
+
+        public void solution()
+        {
+            getInput();
+            swappedValueOfA();
+            swappedValueOfB();  
         }
     }
 }
