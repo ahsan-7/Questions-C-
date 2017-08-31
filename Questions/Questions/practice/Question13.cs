@@ -10,19 +10,29 @@ namespace Questions.practice
     {
         private int setNo { get; set; }
         private int setNo2 { get; set; }
+        private int setNo3 { get; set; }
+        private int setRows { get; set; }
+        private int setColums { get; set; }
 
         private void getInput()
         {
             Console.Write("Enter the no: ");
             setNo = int.Parse(Console.ReadLine());
+            Console.Write("Enter the no of Rows: ");
+            setRows = int.Parse(Console.ReadLine());
+            Console.Write("Enter the no of colums: ");
+            setColums = int.Parse(Console.ReadLine());
         }
 
         private void rectangle()
         {
-            for(setNo2 = 1; setNo2 <= 5; setNo2++)
+            for(setNo2 = 1; setNo2 <= setRows; setNo2++)
             {
-
-                Console.WriteLine("{0}{1}{2}",setNo,setNo,setNo);
+                for (setNo3 = 1; setNo3 <= setColums; setNo3++)
+                {
+                    Console.Write(setNo);
+                }
+                Console.WriteLine("");
             }
         }
 
