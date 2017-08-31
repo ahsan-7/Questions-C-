@@ -12,7 +12,7 @@ namespace Questions.practice
         private float setB { get; set; }
         private float setC { get; set; }
 
-        public float multiply()
+        private float multiply()
         {
             return (this.setA * this.setB * this.setC);
         }

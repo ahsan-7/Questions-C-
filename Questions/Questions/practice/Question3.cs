@@ -11,7 +11,7 @@ namespace Questions.practice
         private float setA { get; set; }
         private float setB { get; set; }
 
-        public float divide()
+        private float divide()
         {
             return (this.setA / this.setB);
         }

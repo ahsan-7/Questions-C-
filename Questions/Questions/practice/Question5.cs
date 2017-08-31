@@ -9,16 +9,16 @@ namespace Questions.practice
     class Question5
     {
         private int setA { get; set; }
-        public int setB { get; set; }
-        public int setC { get; set; }
+        private int setB { get; set; }
+        private int setC { get; set; }
 
-        public int swap1()
+        private int swap1()
         {
             setC = setA + setB;
             setA = setC - setA;
             return (this.setA);  
         }
-        public int swap2()
+        private int swap2()
         {
             setB = setC - setB;
             return (this.setB);
