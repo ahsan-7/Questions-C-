@@ -12,13 +12,16 @@ namespace Questions.practice
         public int setB { get; set; }
         public int setC { get; set; }
 
-        public int swapB()
+        public int swap1()
         {
-            return (this.setC = setB);   
+            setC = setA + setB;
+            setA = setC - setA;
+            return (this.setA);  
         }
-        public int swapA()
+        public int swap2()
         {
-            return (this.setC = setA);
+            setB = setC - setB;
+            return (this.setB);
         }
 
         public void solution()
@@ -27,8 +30,8 @@ namespace Questions.practice
             this.setA = int.Parse(Console.ReadLine());
             Console.Write("Enter noi 2: ");
             this.setB = int.Parse(Console.ReadLine());
-            Console.WriteLine(swapB());
-            Console.WriteLine(swapA());
+            Console.WriteLine(swap1());
+            Console.WriteLine(swap2());
         }
     }
 }
