@@ -51,6 +51,7 @@
     <Compile Include="practice\Question6.cs" />
     <Compile Include="practice\Question7.cs" />
     <Compile Include="practice\Question8.cs" />
+    <Compile Include="practice\Question9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

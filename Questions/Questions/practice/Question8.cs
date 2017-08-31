@@ -22,7 +22,7 @@ namespace Questions.practice
         {
             for (setB = 0; setB <= 10; setB++)
             {
-                setC = setA * setB;
+                setC = setA * setB; 
                 Console.WriteLine("{0} * {1} = {2}", setA, setB, setC);
             }
         }
