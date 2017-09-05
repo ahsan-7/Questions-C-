@@ -96,6 +96,10 @@ namespace Questions
                     Question21 solu21 = new Question21();
                     solu21.solution();
                     break;
+                case (22):
+                    Question22 solu22 = new Question22();
+                    solu22.solution();
+                    break;
                 default:
                     Console.WriteLine("Please Input a Valid No.");
                     break;
