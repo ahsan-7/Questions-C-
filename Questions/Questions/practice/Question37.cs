@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Questions.practice
 {
-    class Question36
+    class Question37
     {
         private string inputString { get; set; }
         private string[] words { get; set; }
