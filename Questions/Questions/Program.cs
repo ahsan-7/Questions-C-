@@ -180,6 +180,10 @@ namespace Questions
                     Question44 solu44 = new Question44();
                     solu44.solution();
                     break;
+                case (45):
+                    Question45 solu45 = new Question45();
+                    solu45.solution();
+                    break;
                 default:
                     Console.WriteLine("Please Input a Valid No.");
                     break;
