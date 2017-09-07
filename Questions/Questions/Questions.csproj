@@ -82,6 +82,7 @@
     <Compile Include="practice\Question45.cs" />
     <Compile Include="practice\Question46.cs" />
     <Compile Include="practice\Question47.cs" />
+    <Compile Include="practice\Question48.cs" />
     <Compile Include="practice\Question5.cs" />
     <Compile Include="practice\Question6.cs" />
     <Compile Include="practice\Question7.cs" />
